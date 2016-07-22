@@ -1,0 +1,76 @@
+header {
+    text-align: center;
+}
+
+.edgeroot, .labelroot {
+    display: none;
+}
+
+.edgetestsuite, .edgemodule, .edgetest {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+    cursor: pointer;
+}
+
+.root {
+    display: none;
+}
+.node {
+    cursor: pointer;
+}
+
+.node circle {
+    fill: cornflowerblue;
+    stroke: gray;
+    stroke-width: 1.5px;
+}
+
+.hide {
+    display: none;
+}
+
+.node text{
+    font: 10px sans-serif;
+    text-anchor: middle;
+}
+
+.node circle.testsuite {
+    fill: green;
+}
+
+.node circle.module {
+    fill: black;
+}
+
+.node circle.test{
+    fill: yellow;
+}
+
+p.labeltestsuite, p.labelmodule, p.labeltest {
+    font: 10px Century Gothic;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+p.labeltestsuite, p.labeltest {
+    text-align: right;
+}
+
+p.labeltest {
+    text-align: left;
+}
+
+#dashboard {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-right: 240px;
+}
+
+#testsuiteDetail, #moduleDetail, #testDetail {
+    width: 30%;
+}
