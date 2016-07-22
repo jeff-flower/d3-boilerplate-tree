@@ -21,4 +21,4 @@ Given more time to work on this project, my next goals would be to provide the u
 # See it working
 Since this is a prototype, this project is built to work without the need for a server to make backend API calls.  
 All you'll need is a simple server to serve the index.html file.
-I suggest [http-server](#https://www.npmjs.com/package/http-server)
+I suggest [http-server](https://www.npmjs.com/package/http-server)
