@@ -112,49 +112,49 @@ var entityDetails = {
   },
   C1: {
     uuid: "C1",
-    testid: "C1",
+    criteriaId: "C1",
     type: "test",
     title: "Mock Criteria 1",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   C2: {
     uuid: "C2",
-    testid: "C2",
+    criteriaId: "C2",
     type: "test",
     title: "Mock Criteria 2",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   C3: {
     uuid: "C3",
-    testid: "C3",
+    criteriaId: "C3",
     type: "test",
     title: "Mock Criteria 3",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   C4: {
     uuid: "C4",
-    testid: "C4",
+    criteriaId: "C4",
     type: "test",
     title: "Mock Criteria 4",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   C5: {
     uuid: "C5",
-    testid: "C5",
+    criteriaId: "C5",
     type: "test",
     title: "Mock Criteria 5",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   C6: {
     uuid: "C6",
-    testid: "C6",
+    criteriaId: "C6",
     type: "test",
     title: "Mock Criteria 6",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
   },
   C7: {
     uuid: "C7",
-    testid: "C7",
+    criteriaId: "C7",
     type: "test",
     title: "Mock Criteria 7",
     description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
@@ -707,6 +707,7 @@ function loadMockCriteria(testId) {
   var childArr =  childIds.map(function(currentValue, idx, arr) {
     return entityDetails[currentValue];
   });
+  console.log(childArr);
   criteriaCache[testId] = childArr;
   displayCriteria(childArr);
 }
