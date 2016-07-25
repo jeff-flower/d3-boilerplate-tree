@@ -707,7 +707,6 @@ function loadMockCriteria(testId) {
   var childArr =  childIds.map(function(currentValue, idx, arr) {
     return entityDetails[currentValue];
   });
-  console.log(childArr);
   criteriaCache[testId] = childArr;
   displayCriteria(childArr);
 }
