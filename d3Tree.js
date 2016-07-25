@@ -161,8 +161,8 @@ var entityDetails = {
   },
 };
 
-var svgWidth = 1200,
-    svgHeight = 700,
+var svgWidth = window.innerWidth - 50,
+    svgHeight = window.innerHeight - 50,
     margin = {
       left: 80,
       right: 40,
@@ -677,17 +677,6 @@ function boilerplateStart(testsuites){
 }
 
 boilerplateActivate();
-
-function updateWindow(){
-  var x = window.innerWidth;
-  var y = window.innerHeight;
-
-  svg.attr("width", x).attr("height", y);
-}
-
-window.onresize = updateWindow;
-
-
 
 function loadMockTestsuites(callback) {
   // get array of children id's
